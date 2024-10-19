@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="extentReportListener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCases.LoginPageTest">
+        <methods>
+          <include name="verifyGreetingMsgTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- testCases.LoginPageTest -->
+      <class name="testCases.HelpAndContactsPageTest">
+        <methods>
+          <include name="verifysrTitleTest"/>
+          <include name="setUp"/>
+          <include name="searchBoxAndSearchBtnTest"/>
+          <include name="tearDown"/>
+          <include name="verifyCustomerServiceTitleTest"/>
+        </methods>
+      </class> <!-- testCases.HelpAndContactsPageTest -->
+      <class name="testCases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="writeInSearchBoxTest"/>
+          <include name="setUp"/>
+          <include name="verifyUsernameTest"/>
+        </methods>
+      </class> <!-- testCases.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
